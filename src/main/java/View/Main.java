@@ -1,6 +1,6 @@
 package View;
 import java.util.Scanner;
-import Controller.DepositoDinheiro;
+
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
