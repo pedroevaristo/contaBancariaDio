@@ -1,6 +1,6 @@
 package Model;
 //DAO
-public class CadastroNovoCliente {
+public class NewRegisterClient {
     private String name_complete;
     private String cpf;
     private String email;
@@ -8,7 +8,7 @@ public class CadastroNovoCliente {
     //Gerar duas contas corrente e poupança/ investimento
 
 
-    public CadastroNovoCliente(String name_complete, String cpf, String email, String password) {
+    public NewRegisterClient(String name_complete, String cpf, String email, String password) {
         this.name_complete = name_complete;
         this.cpf = cpf;
         this.email = email;
