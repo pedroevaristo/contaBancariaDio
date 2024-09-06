@@ -4,8 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
-
-public class Database {
+import Controller.CRUD;
+public class Database extends CRUD{
     private final String url ="jdbc:postgresql://localhost:5432/postgres";
     Properties properties = new Properties();
 
@@ -22,7 +22,19 @@ public class Database {
     }
 
     //input information
+    public void createNewAccount(){
+
+    }
     //consult information
+    public void consultInformationFromClient(){
+
+    }
     //delete account
+    public void deleteAccount(){
+
+    }
     //update account information
+    public void updateInformationClient(){
+
+    }
 }

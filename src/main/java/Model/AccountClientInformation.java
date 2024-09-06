@@ -1,6 +1,6 @@
 package Model;
-//DAO
-public class NewRegisterClient {
+import Database.Database;
+public class AccountClientInformation {
     private String name_complete;
     private String cpf;
     private String email;
@@ -8,7 +8,7 @@ public class NewRegisterClient {
     //Gerar duas contas corrente e poupança/ investimento
 
 
-    public NewRegisterClient(String name_complete, String cpf, String email, String password) {
+    public AccountClientInformation(String name_complete, String cpf, String email, String password) {
         this.name_complete = name_complete;
         this.cpf = cpf;
         this.email = email;
@@ -46,4 +46,11 @@ public class NewRegisterClient {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public void createNewAccount(){
+    Database func_db = new Database();//adicionar futuramente regex dentro dos campos
+
+    func_db.createNewAccount();// aqui vai respassar as informações ao banco de dados
+    }
+
 }

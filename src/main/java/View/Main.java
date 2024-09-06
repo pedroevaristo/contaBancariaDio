@@ -1,34 +1,22 @@
 package View;
 import java.util.Scanner;
-
+import Model.AccountClientInformation;
 public class Main {
     public static void main(String[] args) {
+         AccountClientInformation ACI = new AccountClientInformation();
         Scanner scan = new Scanner(System.in);
-        int loopp = 1;
+        System.out.println("Seja bem-vindo ao Banco Dio\n 1- Criar a conta \n 2-Entrar na conta");
+        Integer choice = scan.nextInt();
+        switch(choice){
+            case 1 :
+                ACI.createNewAccount();
+                break;
 
-        do {
+            case 2 :
+                break;
+        }
 
-            System.out.println("Bem-vindo ao banco prog\n Selecione as opções abaixo:\n 1 -Depositar\n 2-Fazer saque\n 3-extrato bancario\n 4-transferir entre contas");
-            int choice = scan.nextInt();
-            switch (choice) {
-                case 1:
-                    //System.out.println("Entrou no case 1");
-                    break;
-                case 2:
-                    //System.out.println("Entrou no case 2");
-                    break;
-                case 3:
-                    //System.out.println("Entrou no case 3");
-                    break;
-                case 4:
-                    //System.out.println("Entrou no case 4");
-                    break;
-                default:
-                    //System.out.println("Entrou no case default");
-                    break;
 
-            }
-        }while(loopp != 0);
 
     }
 }

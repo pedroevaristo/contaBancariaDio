@@ -1,6 +1,4 @@
-package Controller;
-
-import Model.BankingData;
+package Model;
 
 public class InvestimentAccount {
     private BankingData bank_d;
@@ -25,6 +23,8 @@ public class InvestimentAccount {
         this.available_balance = available_balance;
         return this;
     }
+
+
 
 
 }
