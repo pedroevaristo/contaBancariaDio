@@ -1,13 +1,31 @@
 package Controller;
-
+import Controller.ICurrent;
 import Model.BankingData;
 
-public class CurrentAccount extends BankingData {
+public class CurrentAccount  {
+    private BankingData bank_d;
+    private Double balance;
     private Double cash_handling;
+    private ICurrent current_functions;
 
-    public CurrentAccount(Integer bank_number, Integer bank_Agency, String bank_Name) {
-        super(bank_number, bank_Agency, bank_Name);
+    public CurrentAccount(BankingData bank_d, Double balance, Double cash_handling) {
+        this.bank_d = bank_d;
+        this.balance = balance;
         this.cash_handling = cash_handling;
+    }
+
+    public BankingData getBank_d() {
+        return bank_d;
+    }
+
+
+    public Double getBalance() {
+        return balance;
+    }
+
+    public CurrentAccount setBalance(Double balance) {
+        this.balance = balance;
+        return this;
     }
 
     public Double getCash_handling() {
@@ -18,4 +36,5 @@ public class CurrentAccount extends BankingData {
         this.cash_handling = cash_handling;
         return this;
     }
+
 }

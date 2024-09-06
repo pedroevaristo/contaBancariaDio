@@ -1,6 +1,6 @@
 package Model;
 //DAO
-public abstract class BankingData {
+public class BankingData {
     protected Integer bank_number;
     protected Integer bank_agency;
     protected String bank_name;
